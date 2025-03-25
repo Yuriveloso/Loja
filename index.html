@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>LOGA_DO_OTAKU</title>
+    <link rel="stylesheet" href="styler.css">
+</head>
+<body>
+    <header>
+        <h1>Produtos OTAKUS</h1>
+    </header>
+    <main>
+    <section>
+        <input id="campo-pesquisa" type="text" placeholder="Digite o nome do Produto">
+        <button onclick="Pesquisar()">Pesquisar</button>
+    </section>
+
+    <section class="resultados-pesquisa" id="resultados-pesquisa">
+        <!--
+        <div class="item-resultado">
+            <img src="img/espadas.png" alt="espadas">
+            <h2>Espadas do zoro</h2>
+            <p class="descricao-meta">Domine o estilo Santoryu com as réplicas das lendárias espadas de Roronoa Zoro! De Wado Ichimonji à Enma, cada katana é uma obra-prima para fãs e colecionadores. Adquira já a sua e sinta o poder do maior espadachim do mundo!</p>
+            <a href="www.produtosotakus.com.br/products/kit-espadas-zoro-one-piece" target="_blank">Mais Informações</a>             
+        </div>
+        <div class="item-resultado">
+            <img src="img/chapeu.png" alt="chapeu">
+            <h2>Chapeu de palha</h2>
+            <p class="descricao-meta">Aventure-se pelos mares com o icônico Chapéu de Palha do Luffy! Símbolo de liberdade e espírito aventureiro, este chapéu é perfeito para fãs de One Piece. Adquira o seu e junte-se à tripulação dos Piratas do Chapéu de Palha!</p>
+            <a href="www.produtosotakus.com.br/products/chapeu-de-palha-luffy-one-piece" target="_blank">Mais Informações</a>            
+       </div>
+        <div class="item-resultado">
+            <h2>Bandana de Konoha</h2>
+            <img src="img/bandana.png" alt="bandana">
+            <p class="descricao-meta">Mostre seu orgulho ninja com a autêntica Bandana de Konoha! Símbolo de lealdade e força, esta bandana é essencial para qualquer fã de Naruto. Adquira já a sua e junte-se aos ninjas da Vila da Folha!</p>
+            <a href="www.produtosotakus.com.br/products/bandana-konoha-naruto" target="_blank">Mais Informações</a>                                   
+        </div>
+        <div class="item-resultado">
+            <h2>Uniforme de Chunin</h2>
+            <img src="img/chunin.png" alt="chunin">
+            <p class="descricao-meta">Vista o orgulho da Vila da Folha com o autêntico Uniforme de Chunin! Símbolo de habilidade e determinação, este traje é perfeito para fãs de Naruto. Adquira já o seu e sinta-se como um verdadeiro ninja!</p>
+            <a href="www.produtosotakus.com.br/products/uniforme-chunin-naruto" target="_blank">Mais Informações</a>                                   
+        </div>
+        <div class="item-resultado">
+            <h2>Kunai Do Minato</h2>
+            <img src="img/kunai.png" alt="Kunai">
+            <p class="descricao-meta">Domine a velocidade do Relâmpago Amarelo com a Kunai do Minato! Réplica fiel da arma lendária, perfeita para fãs e colecionadores de Naruto. Adquira já a sua e teletransporte-se para o mundo ninja!</p>
+            <a href="www.produtosotakus.com.br/products/kunai-do-minato-naruto" target="_blank">Mais Informações</a>                                   
+        </div>
+        <div class="item-resultado">
+            <h2>Gomu Gomu no mi</h2>
+            <img src="img/gomu.png" alt="gomu">
+            <p class="descricao-meta">Alcance o poder da borracha com a réplica da Gomu Gomu no Mi! A lendária fruta do diabo que concedeu poderes incríveis ao Luffy está disponível para você. Adquira já a sua e estique sua paixão por One Piece!</p>
+            <a href="www.produtosotakus.com.br/products/gomu-gomu-no-mi-one-piece" target="_blank">Mais Informações</a>                                   
+        </div><div class="item-resultado">
+            <h2>Mera Mera no mi</h2>
+            <img src="img/mera.png" alt="mera">
+            <p class="descricao-meta">Incendeie sua coleção com a réplica da Mera Mera no Mi! A lendária fruta do diabo que concede o poder do fogo, agora disponível para você. Adquira já a sua e domine as chamas como um verdadeiro pirata!</p>
+            <a href="www.produtosotakus.com.br/products/mera-mera-no-mi-one-piece" target="_blank">Mais Informações</a>                                   
+        </div>
+        <div class="item-resultado">
+            <h2>Figura do Luffy</h2>
+            <img src="img/luffy.png" alt="luffy">
+            <p class="descricao-meta">Traga o espírito aventureiro de Luffy para sua coleção! Com detalhes incríveis e poses dinâmicas, esta figura é perfeita para fãs de One Piece. Adquira já a sua e navegue pelos mares da nostalgia!</p>
+            <a href="www.produtosotakus.com.br/products/figura-luffy-one-piece" target="_blank">Mais Informações</a>                  
+                            
+        </div>
+        <div class="item-resultado">
+            <h2>Navio dos Mugiwaras</h2>
+            <img src="img/navio.png" alt="navio">
+            <p class="descricao-meta"> Navegue pelos mares da nostalgia com a réplica do lendário Going Merry! Este navio icônico, símbolo de aventura e amizade, é perfeito para fãs de One Piece. Adquira já o seu e embarque em uma jornada inesquecível!</p>
+            <a href="www.produtosotakus.com.br/products/navio-going-merry-one-piece" target="_blank">Mais Informações</a>                                   
+        </div>
+        <div class="item-resultado">
+            <h2>Manga de Demon Slayer</h2>
+            <img src="img/manga.jpg" alt="manga">
+            <p class="descricao-meta">Mergulhe no mundo de Tanjiro e Nezuko com os mangás de Demon Slayer! Acompanhe a emocionante jornada de caçadores de demônios em busca de vingança e redenção. Adquira já sua coleção e desvende os segredos da respiração da água!</p>
+            <a href="www.produtosotakus.com.br/products/manga-demon-slayer" target="_blank">Mais Informações</a>                                   
+        </div>
+    -->
+    </section>
+    </main>
+
+    <footer>
+        <div class="container">
+            <div class="row">
+                <div class="col">
+                    <h3>Sobre Nós</h3>
+                    <p>Email: contato@seusite.com</p>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <script src="dados.js"></script>
+    <script src="script.js"></script>
+</body>
+</html>
